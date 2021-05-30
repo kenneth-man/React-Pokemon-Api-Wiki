@@ -1,0 +1,27 @@
+.navbar {
+    height: 12vh;
+    min-height: 12vh;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: #2a75bb;
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Heebo';
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #c7a008;
+    margin-left: 200px;
+}
+
+.navbar__link--active {
+    color:#ffcb05;
+}
+
+.logo {
+    height: 80px;
+    width: 160px;
+    margin: 0px 200px;
+}

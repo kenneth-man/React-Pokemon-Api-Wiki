@@ -1,0 +1,29 @@
+.home {
+    justify-content: space-evenly;
+}
+
+.home__row {
+    height: max-content;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.home__h1,
+.home__h2 {
+    color: #ffcb05;
+}
+
+.home__h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.home__h2 {
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.home__img {
+    width: 25%;
+}

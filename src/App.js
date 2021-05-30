@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar.js';
+import Cards from './components/Cards/Cards.js';
+import Home from './components/Home/Home.js';
+import Sets from './components/Sets/Sets.js';
+import Types from './components/Types/Types.js';
+import ApiDataContextProvider from './ApiDataContext.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApiDataContextProvider>
+      <Router>
+        <div className="app column">
+          <Navbar/>
+
+          <Switch>
+            <Route exact path='/' component={Home}/>
+
+            <Route exact path='/Cards' component={Cards}/>
+
+            <Route exact path='/Sets' component={Sets}/>
+
+            <Route exact path='/Types' component={Types}/>
+          </Switch>
+        </div>
+      </Router>
+    </ApiDataContextProvider>
   );
 }
 

@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/*boiler plate project set-up*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  height: 100vh;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*base styling*/
+/*
+#ffcb05
+#c7a008
+#2a75bb
+#3c5aa6
+*/
+
+.content {
+  position: relative;
+  height: max-content;
+  min-height: 88vh;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+input,
+button,
+select {
+  font-family: 'Heebo';
+  font-weight: 300;
+}
+
+input,
+button,
+select {
+  outline: none;
+  border: none;
+}
+
+input:hover,
+button:hover,
+select:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+input:active,
+button:active,
+select:active {
+  filter: brightness(100%);
+}
+
+button {
+  height: max-content;
+  width: max-content;
+  font-size: 18px;
+  font-weight: 900;
+  color: #3c5aa6;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.button-small {
+  padding: 3px 10px;
+}
+
+.button-large {
+  padding: 7.5px 20px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.column {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.rounded {
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transition {
+  transition: all 0.2s;
+}
+
+.hidden {
+  opacity: 0%;
+  visibility: hidden;
+  display: none;
+}
+
+.spinner {
+  position: absolute;
+  top: 45%;
+  left: 48.5%;
 }

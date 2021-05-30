@@ -1,0 +1,15 @@
+.types {
+    background-color: #3c5aa6;
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url('../../res/pokemon-types.png');
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 19px;
+    padding-right: 50px;
+}
+
+.types__h1 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 900;
+    margin-left: 70px;
+}
